@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -52,3 +52,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+
+$route['result'] = 'Welcome/result';
+
+/* BEGIN:: ADMIN PANEL */
+$route[ADMIN_SLUG . '/logout'] = 'admin/CAuth/logout';
+$route[ADMIN_SLUG . '/login'] = 'admin/CAuth/login';
+$route[ADMIN_SLUG . '/forgot-password'] = 'admin/CAuth/forgot_password';
+
+$route[ADMIN_SLUG] = 'admin/CDashboard/index';
+$route[ADMIN_SLUG . "/satta-records"] = 'admin/CDashboard/satta_records';
+$route[ADMIN_SLUG . "/action/get_data"] = 'admin/CDashboard/action_get_data';
+$route[ADMIN_SLUG . "/action/delete_data"] = 'admin/CDashboard/action_delete_data';
