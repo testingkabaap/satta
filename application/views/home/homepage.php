@@ -4,16 +4,14 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
-  <title>BBL Satta</title>
+  <title>DDL Satta</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="<?php echo base_url('assets/plugins/bootstrap/bootstrap.min.css'); ?>" rel="stylesheet">
   <link rel="stylesheet" href="<?php echo base_url('assets/css/new.css') ?>">
   <meta name="robots" content="">
   <style>
-    body {
-      background-color: #f5f9d0 !important;
-    }
+    
   </style>
 </head>
 
@@ -23,7 +21,7 @@
 
 
 
-<body style="background-color:#eef2009e !important;">
+<body style="background-color: lavenderblush !important;">
 
   <section class="head_marquee home">
     <img class="ban_img" src="<?php echo base_url('assets/images/sattaBanner.jpg') ?>">
@@ -35,7 +33,7 @@
           TO
           <br>
           <strong>
-            BBL Lottry Satta
+            DDL Lottery Satta
           </strong>
         </h2>
 
@@ -57,7 +55,7 @@
     <div class="latest_result">
       <div>
         <h2>Today Latest Result</h2>
-        <h3>BBL Lottry Satta</h3>
+        <h3>DDL Lottry Satta</h3>
         <p>(Time: <?php echo date("h:i A", strtotime($lastIndex)) ?>)</p>
         <div class="d-flex justify-content-center">
           <div>
@@ -86,7 +84,7 @@
       if (isset($PREV_RECORDS[$i->format("H:i")])) $pResult = $PREV_RECORDS[$i->format("H:i")];
       echo '<div class="result_box_card">
                   <div>
-                    <h2>BBL SATTA</h2>
+                    <h2>DDL SATTA</h2>
                     <p>(Time: ' . $i->format("h:i A") . ')</p>
                     <div class="time">
                       <span id="yesterday">' . $pResult . '</span>
@@ -107,7 +105,7 @@
           Contact Us : +91-Only for WhatsApp (Only Whatsaap)
         </a>
         <a href="#" target="_blank">
-          Email : bblsattalottarysatta@gmail.com </a>
+          Email : DDLsattalottarysatta@gmail.com </a>
       </div>
     </marquee>
 
@@ -116,16 +114,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <a href="<?php echo site_url() ?>" target="_blank">BBL SATTA</a>
+          <a href="<?php echo site_url() ?>" target="_blank">DDL SATTA</a>
         </div>
         <div class="col-md-3">
-          <a href="<?php echo site_url() ?>" target="_blank">BBL SATTA</a>
+          <a href="<?php echo site_url() ?>" target="_blank">DDL SATTA</a>
         </div>
         <div class="col-md-3">
-          <a href="<?php echo site_url() ?>" target="_blank">BBL SATTA</a>
+          <a href="<?php echo site_url() ?>" target="_blank">DDL SATTA</a>
         </div>
         <div class="col-md-3">
-          <a href="<?php echo site_url() ?>" target="_blank">BBL SATTA</a>
+          <a href="<?php echo site_url() ?>" target="_blank">DDL SATTA</a>
         </div>
       </div>
     </div>
