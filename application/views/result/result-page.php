@@ -3,7 +3,7 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
-  <title>BBL Satta</title>
+  <title>DDL Satta</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="<?php echo base_url('assets/plugins/bootstrap/bootstrap.min.css'); ?>" rel="stylesheet">
@@ -32,14 +32,14 @@
 
   <section class="marquee_wrapper" style="background:#0f3562;">
     <div class="satta_banner_heading">
-      <h2 style="color:red;">BBL Real Satta</h2>
+      <h2 style="color:red;">DDL Real Satta</h2>
     </div>
   </section>
   <section class="phli_news">
     <div class="container">
       <p id="phliNewsTime"><?php echo date("D, d-m-Y", strtotime($RESULT_DATE)) ?></p>
       <p class="hindi_text" style="color:#24a699;">!! हाँ भाई यहीं आती हे सबसे पहले खबर रूको और देखो !!</p>
-      <h2>BBL SATTA</h2>
+      <h2>DDL SATTA</h2>
       <form method="POST">
         <div class="form_styling">
           <input class="form-control date_button_style" type="date" name="result_date" min="<?php echo date("Y-m-d", strtotime("-1 month")) ?>" value="<?php echo date("Y-m-d", strtotime($RESULT_DATE)) ?>" max="<?php echo date("Y-m-d") ?>">
@@ -214,7 +214,7 @@
           Contact Us : +91-Only for WhatsApp (Only Whatsaap)
         </a>
         <a href="#" target="_blank">
-          Email : DDLsattalottarysatta@gmail.com </a>
+          Email : DDLsattalottary@gmail.com </a>
       </div>
     </marquee>
 
@@ -225,16 +225,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <a href="<?php echo site_url() ?>" target="_blank">BBL SATTA</a>
+          <a href="<?php echo site_url() ?>" target="_blank">DDL SATTA</a>
         </div>
         <div class="col-md-3">
-          <a href="<?php echo site_url() ?>" target="_blank">BBL SATTA</a>
+          <a href="<?php echo site_url() ?>" target="_blank">DDL SATTA</a>
         </div>
         <div class="col-md-3">
-          <a href="<?php echo site_url() ?>" target="_blank">BBL SATTA</a>
+          <a href="<?php echo site_url() ?>" target="_blank">DDL SATTA</a>
         </div>
         <div class="col-md-3">
-          <a href="<?php echo site_url() ?>" target="_blank">BBL SATTA</a>
+          <a href="<?php echo site_url() ?>" target="_blank">DDL SATTA</a>
         </div>
       </div>
     </div>
