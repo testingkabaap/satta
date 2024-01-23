@@ -63,6 +63,7 @@ $route[ADMIN_SLUG . '/login'] = 'admin/CAuth/login';
 $route[ADMIN_SLUG . '/forgot-password'] = 'admin/CAuth/forgot_password';
 
 $route[ADMIN_SLUG] = 'admin/CDashboard/index';
+$route[ADMIN_SLUG . "/change-password"] = 'admin/CDashboard/change_password';
 $route[ADMIN_SLUG . "/satta-records"] = 'admin/CDashboard/satta_records';
 $route[ADMIN_SLUG . "/action/get_data"] = 'admin/CDashboard/action_get_data';
 $route[ADMIN_SLUG . "/action/delete_data"] = 'admin/CDashboard/action_delete_data';

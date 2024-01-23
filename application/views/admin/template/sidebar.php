@@ -13,6 +13,7 @@
     $sidebarArr = [
       // ["link" => site_url(ADMIN_SLUG), "title" => "Dashboard", "icon" => '<i class="nav-icon fas fa-th"></i>'],
       ["link" => site_url(ADMIN_SLUG . "/satta-records"), "title" => "Satta Records", "icon" => '<i class="nav-icon fas fa-th"></i>'],
+      ["link" => site_url(ADMIN_SLUG . "/change-password"), "title" => "Change Password", "icon" => '<i class="nav-icon fas fa-th"></i>'],
 
       // ["link" => "#", "title" => "Blogs", "icon" => '<i class="nav-icon fas fa-th"></i>', "sub" => [
       //   ["link" => site_url(ADMIN_SLUG . "/blogs"), "title" => "Blogs", "icon" => '<i class="nav-icon fas fa-th"></i>'],

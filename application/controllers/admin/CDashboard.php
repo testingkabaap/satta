@@ -24,6 +24,41 @@ class CDashboard extends CI_Controller
     // $this->load->view("admin/dashboard/dashboard", $DATA);
   }
 
+  public function change_password()
+  {
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+      $this->load->library("form_validation");
+      $this->form_validation->set_rules('o_password', '<b>Old Password</b>', 'required|min_length[8]|max_length[20]');
+      $this->form_validation->set_rules('password', '<b>New Password</b>', 'required|min_length[8]|max_length[20]');
+      $this->form_validation->set_rules('c_password', '<b>Confirm Password</b>', 'required|min_length[8]|max_length[20]|matches[password]');
+
+      $this->form_validation->set_error_delimiters('<p class="mb-0">', '</p>');
+      if ($this->form_validation->run()) {
+        $DB = $this->load->database("default", true);
+        $checkAdmin = $DB->where("id", $this->session->userdata(SESSION_ADMIN_DETAILS)["id"])->get(TABLE_ADMIN)->row_array();
+        if ($checkAdmin) {
+          if (md5($_POST["password"]) != md5($_POST["o_password"])) {
+            if ($checkAdmin["password"] === md5($_POST["o_password"])) {
+              if ($_POST["password"] === $_POST["c_password"]) {
+                $DB = $this->load->database("default", true);
+                $DB->update(TABLE_ADMIN, ["password" => md5($_POST["password"])], ["id" => $checkAdmin["id"]]);
+                $DB->close();
+                $RES = ["status" => true, "status_code" => 200, "status_key" => "SUCCESS", "message" => "Password Updated Successfully", "data" => [
+                  "clear_form" => true
+                ]];
+              } else $RES = ["status" => false, "status_code" => 400, "status_key" => "ERROR", "message" => "New Password and Confirm Password are not same"];
+            } else $RES = ["status" => false, "status_code" => 400, "status_key" => "ERROR", "message" => "Invalid Old Password"];
+          } else $RES = ["status" => false, "status_code" => 400, "status_key" => "ERROR", "message" => "Old Password and New Password should be different"];
+          $DB->close();
+        } else $RES = ["status" => false, "status_code" => 400, "status_key" => "ERROR", "message" => "Invalid Admin"];
+      } else $RES = ["status" => false, "status_code" => 400, "status_key" => "ERROR", "message" => validation_errors()];
+      echo json_encode($RES);
+      exit();
+    }
+    $DATA["META_TITLE"] = "Change Password";
+    $this->load->view("admin/dashboard/change-password", $DATA);
+  }
+
   public function action_get_data()
   {
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
